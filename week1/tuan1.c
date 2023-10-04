@@ -168,6 +168,7 @@ int main(){
 						if(strcmp(current->username,username) == 0){
 							if(current->status ==0){
 								printf("Your account had been blocked\n");
+								current= NULL;
 							}
 							else {
 								if(strcmp(current->password,password) == 0 ){
